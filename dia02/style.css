@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: verdana;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 4px 0 #262626;
+  border-radius: 50%;
+  background: transparent;
+  animation: animate 1s linear infinite;
+}
+
+.text {
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
