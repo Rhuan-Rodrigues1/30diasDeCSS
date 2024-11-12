@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(168, 244, 247);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+
+span::before {
+  content: "";
+  animation: animate 3s infinite;
+}
+
+@keyframes animate {
+  0% {
+    content: "💻";
+  }
+
+  50% {
+    content: "🍕";
+  }
+
+  100% {
+    content: "🎮";
+  }
+}
